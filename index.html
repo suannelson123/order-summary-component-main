@@ -22,9 +22,9 @@
         align-items: center;
         height: 100vh;
         background-image: url(images/pattern-background-desktop.svg);
-        background-size: cover;
+        background-size: 100%;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: absolute;
       }
 
       .container {
@@ -64,15 +64,15 @@
       }
 
       .pricing-box {
-          height: 100px;
-          display: flex;
-          align-items: center;
-            padding: 20px;
-            background-color: rgb(188 193 204 / 12%);
-            border-radius: 15px;
-            margin-left: 100px;
-            margin-right: 100px;
-            margin-bottom: 50px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: rgb(188 193 204 / 12%);
+        border-radius: 15px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 50px;
       }
       .pricing-box .change-plan {
         display: flex;
@@ -82,14 +82,12 @@
         font-weight: 600;
       }
 
-        .change-plan a{
-          color: blue;
-        }
-
-      
+      .change-plan a {
+        color: blue;
+      }
 
       .change-plan a:hover {
-      color: blueviolet;
+        color: blueviolet;
       }
 
       .your-plan {
@@ -101,71 +99,80 @@
         bottom: 5px;
         padding-left: 1px;
         height: 15px;
-        font-weight: 900 ;
+        font-weight: 900;
         font-family: sans-serif;
       }
 
-      .your-plan .p2{
+      .your-plan .p2 {
         position: relative;
         bottom: 1px;
         height: 15px;
         font-size: 20px;
-        font-weight:1px ;
+        font-weight: 1px;
         color: rgb(128, 128, 128);
       }
 
       .image-icon img {
-        margin-right:  20px; 
+        margin-right: 20px;
       }
 
-        .btn {
-      background-color: rgba(57,43,225,255);
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.1s ease;
-      display: flex;
-      width: 66%;
-      height: 65px;
-      justify-content: center;
-      align-items: center;
-      margin-left: 100px;
-      border-radius: 15px;
-      filter: drop-shadow(0px 6px 6px gray);
-      font-size: 20px;
-      font-weight: 600;
-    }
+      .btn {
+        background-color: rgba(57, 43, 225, 255);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.1s ease;
+        display: flex;
+        width: 66%;
+        height: 65px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+        border-radius: 15px;
+        filter: drop-shadow(0px 6px 6px gray);
+        font-size: 20px;
+        font-weight: 600;
+      }
 
+      .btn:hover {
+        background-color: rgb(0, 204, 255);
+        box-shadow: 0 0 10px rgba(255, 3, 179, 0.2);
+        width: 66%;
+        height: 65px;
+      }
 
-    .btn:hover {
-      background-color: rgb(0, 204, 255);
-      box-shadow: 0 0 10px rgba(255, 3, 179, 0.2);
-      width: 66%;
-      height: 65px;
-    }
+      .btn:active {
+        background-color: hsl(207, 100%, 50%);
+      }
 
-    .cancel_container {
-      width: 600px;
-      height: 50px;
-    }
+      .cancel_container {
+        width: 600px;
+        height: 50px;
+      }
 
-    .cancel-order a {
-      display: flex;
-      justify-content: center;
-      text-decoration: none;
-      font-size: 20px;
-      color: gray;
-      font-weight: 600;
-    }
+      .cancel-order a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 20px;
+        color: gray;
+        font-weight: 600;
+      }
 
-    .cancel-order a:hover {
-      color: rgb(0, 0, 0);
-    }
-    
+      .cancel-order a:hover {
+        color: rgb(0, 0, 0);
+      }
 
+      .cancel-order a:active {
+        color: rgba(29, 49, 84, 255);
+      }
 
+      .change-plan a:active {
+        color: hsl(201, 100%, 50%);
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
@@ -184,21 +191,20 @@
       </div>
       <div class="pricing-box">
         <div class="image-icon">
-        <img src="images/icon-music.svg" alt="music-icon" />
-      </div>
-      <div class="your-plan">
-        <p class="p1">Annual Plan</p>
-        <p class="p2">$15.99/year</p>
-      </div>   
-      <div class="change-plan"><a href="#">Change</a>
-      </div>
+          <img src="images/icon-music.svg" alt="music-icon" />
+        </div>
+        <div class="your-plan">
+          <p class="p1">Annual Plan</p>
+          <p class="p2">$15.99/year</p>
+        </div>
+        <div class="change-plan"><a href="#">Change</a></div>
       </div>
       <button class="btn" type="button">Proceed to Payment</button>
       <div class="cancel_container">
         <div class="cancel-order">
-      <p><a href="#">Cancel Order</a></p>
+          <p><a href="#">Cancel Order</a></p>
+        </div>
       </div>
-      </div>
-
+    </div>
   </body>
 </html>
