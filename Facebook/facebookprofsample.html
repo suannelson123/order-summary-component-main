@@ -1,196 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sample</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="facebooksample.css">
+  <title>facebook-profile-sample</title>
 
-    <style>
-      body {
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
+  <style>
 
-      .container {
-        background-color:rgb(169, 166, 166);
-        width: 1240px;
-        height: 500px;
-        padding-left: 20px;
-        padding-right: 100px;
-        padding-top: 0px;
-        padding-bottom: 10px;
-        background-size: cover;
-      }
-
-      .wrapper {
-        background-color: rgb(112, 77, 111);
-        width: 100%;
-        height: 70%;
-        background-image: url(images/eyy.jpg);
-        display: flex;
-        align-items: end;
-        background-position: center;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-      }
-
-      .avatar {
-        color: white;
-        font-size: 20px;
-        width: 100%;
-        height: 30%;
-        display: flex;
-        justify-content: end;
-        margin-left: 20px;
-        margin-right: 20px;
-        align-items: end;
-        flex-direction: column;
-      }
-
-      .icon-text p {
-        display: inline;
-      }
-
-      .icon-text {
-        height: 50%;
-        display: flex;
-        align-items: center;
-        border-radius: 15px;
-        background: gray;
-        backdrop-filter: blur(1px);
-        color: white;
-        border: 1px solid transparent;
-        cursor: pointer;
-        transition: 0.3s ease;
-      }
-
-      .icon-text:hover {
-        background-color: #c4c4c4;
-        box-shadow: 0 0 10px #c4c4c4;
-        box-sizing: border-box;
-      }
-
-      .avatar-container {
-        height: fit-content;
-        font-weight: 600;
-        font-size: larger;
-        display: flex;
-        align-items: center;
-        gap: 5px;
-      }
-
-      .avatar-container .button2 {
-        width: 100px;
-        height: 50px;
-        border-radius: 50%;
-      }
-
-      .button2 {
-        width: 170px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 15px;
-        background: gray;
-        backdrop-filter: blur(1px);
-        color: white;
-        border: 1px solid transparent;
-        cursor: pointer;
-        transition: 0.3s ease;
-        margin-bottom: 10px;
-        margin-top: 10px;
-      }
-
-      .button2:hover {
-        background-color: #c4c4c4;
-        box-shadow: 0 0 10px #c4c4c4;
-        box-sizing: border-box;
-      }
-      .button2 p {
-        display: inline;
-      }
-
-      .button2 div {
-        font-size: 16px;
-        font-weight: 600;
-      }
-      .button2 .Cover-photo-button {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-      }
-
-
-
-
-      .profile-container {
-        width: 1240px;
-        height: 160px;
-        background-color: aqua;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-
-      .profile-contents   {
-        width: 1110px;
-        height: 160px;
-        background-color: black;
-      }
-
-      
-
-
-      .profile-photo {
-        width: 100px;
-        height: 100px;
-        background-color: transparent;
-        border: 1px solid rgb(0, 255, 21);
-        border-radius: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="wrapper">
-        <div class="avatar">
-          <button class="icon-text">
-            <div class="avatar-container">
-              <ion-icon name="happy-outline"></ion-icon>
-              <p>Create with avatar</p>
-              <button class="button2">
-                <div class="Cover-photo-button">
-                  <ion-icon name="camera-outline"></ion-icon>
-                  <p>Edit cover photo</p>
-                </div>
-              </button>
-            </div>
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="contents">
+        <div>
+          <button class="avatar">
+            <ion-icon style="font-size: 20px;" name="happy-outline"></ion-icon>
+            <p>Create with avatar</p>
           </button>
         </div>
-        <div class="profile-container">
-          <div class="profile-contents">
-            <div class="profile-photo">
-              
-            </div>            
+        <div>
+
+          <button class="add-photo">
+            <ion-icon style="font-size: 20px;" name="camera-outline"></ion-icon>
+            <p>Edit  cover photo</p>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-two">
+      <div class="profile-container">
+        <div class="profile-contents">
+          <div class="profile-photo">
+            <img src="images/kuyabok.jpg" alt="kuyabok's-picture" />
+          </div>
+          <span>
+          <h1>Joimee Cajandab</h1>
+          <a href="#">124 friends</a>
+          </span>
+          <div class="add-edit-profile">
+            <button class="btn1"> <ion-icon style="font-size: 20px; color: rgb(255, 255, 255); font-weight: 900;" name="add-outline"></ion-icon>Add to story</button>
+            <button class="btn2"><ion-icon style="font-size: 20px; font-weight: 600;" name="pencil-outline"></ion-icon>Edit profile</button>
+            <div class="dropdown-menu">
+            <button class="btn3"><ion-icon name="chevron-down-outline"></ion-icon></button>
+            <div class="dropdown">
+              <a href="#">123</a>
+              <a href="#">3456</a>
+              <a href="#">78910</a>
+            </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+
+  </div>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  
+</body>
 </html>
