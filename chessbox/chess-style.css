@@ -1,6 +1,7 @@
+
+
 *{
     margin: 0;
-    padding: 0;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 
 
 .container {
-    background-color: rgba(226, 136, 18, 0.736);
+    background-color: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: repeat(8, 100px);
     grid-template-rows: repeat(8, 100px);
@@ -21,41 +22,235 @@ body {
     padding:10px;
 }
 
-.chess-box:nth-child(odd) { background-color: antiquewhite;}
+.chess-box:nth-child(1n) {
+    background-color: antiquewhite; 
+}
 
-.chess-box:nth-child(even) { background-color: black;}
+.chess-box:nth-child(2n) {
+    background-color: black; 
+}
 
+.chess-box:nth-child(9n) {
+    background-color: black; 
+}
 
-.chess-box2:nth-child(even) { background-color: antiquewhite; }
+.chess-box:nth-child(10n) {
+    background-color: antiquewhite; 
+}
 
-.chess-box2:nth-child(odd) { background-color: black;}
+.chess-box:nth-child(11n) {
+    background-color: black; 
+}
 
+.chess-box:nth-child(12n) {
+    background-color: antiquewhite; 
+}
 
-.chess-box3:nth-child(odd) { background-color: antiquewhite;}
+.chess-box:nth-child(13n) {
+    background-color: black; 
+}
 
-.chess-box3:nth-child(even) { background-color: black;}
+.chess-box:nth-child(14n) {
+    background-color: antiquewhite; 
+}
 
+.chess-box:nth-child(15n) {
+    background-color: black; 
+}
 
-.chess-box4:nth-child(even) { background-color: antiquewhite;}
+.chess-box:nth-child(16n) {
+    background-color: antiquewhite; 
+}
 
-.chess-box4:nth-child(odd) { background-color: black;}
+.chess-box:nth-child(17n) {
+    background-color: antiquewhite; 
+}
 
+.chess-box:nth-child(18n) {
+    background-color: black; 
+}
 
-.chess-box5:nth-child(odd) { background-color: antiquewhite;}
+.chess-box:nth-child(19n) {
+    background-color: antiquewhite; 
+}
 
-.chess-box5:nth-child(even) { background-color: black;}
+.chess-box:nth-child(20n) {
+    background-color: black; 
+}
 
+.chess-box:nth-child(21n) {
+    background-color: antiquewhite; 
+}
 
-.chess-box6:nth-child(even) { background-color: antiquewhite;}
+.chess-box:nth-child(22n) {
+    background-color: black; 
+}
 
-.chess-box6:nth-child(odd) { background-color: black;}
+.chess-box:nth-child(23n) {
+    background-color: antiquewhite; 
+}
 
+.chess-box:nth-child(24n) {
+    background-color: black; 
+}
 
-.chess-box7:nth-child(even) { background-color: black;}
+.chess-box:nth-child(25n) {
+    background-color: black;    
 
-.chess-box7:nth-child(odd) { background-color: antiquewhite;}
+}
 
+.chess-box:nth-child(26) {
+    background-color: antiquewhite;
+}
 
-.chess-box8:nth-child(even) { background-color: antiquewhite;}
+.chess-box:nth-child(27) {
+    background-color: black;
+}
 
-.chess-box8:nth-child(odd) { background-color: black;}
+.chess-box:nth-child(28) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(29) {
+    background-color: black;
+}
+
+.chess-box:nth-child(30) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(31) {
+    background-color: black;
+}
+
+.chess-box:nth-child(32) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(33) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(34) {
+    background-color: black;
+}
+
+.chess-box:nth-child(35) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(36) {
+    background-color: black;
+}
+
+.chess-box:nth-child(37) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(38) {
+    background-color: black;
+}
+
+.chess-box:nth-child(39) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(40) {
+    background-color: black;
+}
+
+.chess-box:nth-child(41) {
+    background-color: black;
+}
+
+.chess-box:nth-child(42) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(43) {
+    background-color: black;
+}
+
+.chess-box:nth-child(44) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(45) {
+    background-color: black;
+}
+
+.chess-box:nth-child(46) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(47) {
+    background-color: black;
+}
+
+.chess-box:nth-child(48) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(49) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(50) {
+    background-color: black;
+}
+
+.chess-box:nth-child(51) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(52) {
+    background-color: black;
+}
+
+.chess-box:nth-child(53) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(54) {
+    background-color: black;
+}
+
+.chess-box:nth-child(55) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(56) {
+    background-color: black;
+} 
+
+.chess-box:nth-child(57) {
+    background-color: black;
+}
+.chess-box:nth-child(58) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(59) {
+    background-color: black;
+}
+
+.chess-box:nth-child(60) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(61) {
+    background-color: black;
+}
+
+.chess-box:nth-child(62) {
+    background-color: antiquewhite;
+}
+
+.chess-box:nth-child(63) {
+    background-color: black;
+}
+
+.chess-box:nth-child(64) {
+    background-color: antiquewhite;
+}
+
