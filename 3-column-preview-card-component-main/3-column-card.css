@@ -1,0 +1,179 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+   min-width: 100%;
+    height: 100vh;
+    background: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+ display: flex;
+ align-items: center;
+ max-width: 100%;
+ height: max-content;
+ border-radius: 1em;
+ border: 1px solid black;   
+ overflow: hidden;
+ 
+
+
+}
+
+img {
+
+    width: 64px;
+    height: 40px;
+    margin-bottom: 30px;
+
+}
+
+
+
+.box {
+
+    max-width: 300px;
+    height: 500px;
+    padding: 40px 40px 40px 40px;
+     display: flex;
+     flex-direction: column;
+
+}
+
+
+
+
+
+
+.box h1 {
+
+    color: #FFF;
+ 
+    font-family: 'Big Shoulders Display', serif ; 
+    margin-bottom: 30px;
+}
+
+.box p {
+
+    font-family: 'Lexend Deca', serif;
+    margin-bottom: auto;
+    font-size: 15px;
+    color:  hsla(0, 0%, 100%, 0.75);
+    line-height: 20px;
+    text-align: left;
+}
+
+button {
+
+    max-width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border-style: none;
+    font-size: 15px;
+    font-family: 'Lexend Deca', serif;
+    font-weight: 700;
+}
+
+button:active {
+
+    background-color: transparent;
+    color: #FFF;
+    border: 3px solid white
+}
+
+
+.btn1 {
+
+color:hsl(31, 77%, 52%)
+    
+}
+.btn2 {
+
+    color: hsl(184, 100%, 30%);
+}
+.btn3 {
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+
+
+.color-1 {
+
+    background-color:  hsl(31, 77%, 52%);
+}
+
+
+.color-2 {
+
+    background-color: hsl(184, 100%, 22%);
+
+}
+
+.color-3 {
+
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+@media  (max-width: 878px) {
+    
+    .container {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+
+        max-width: 300px;
+        max-height: 292.7px;
+        padding-top: 5px;
+    }
+
+    .box img {
+        max-width: 54px;
+        height: 40px;
+        margin: 5px;
+    }
+
+    .box h1 {
+
+        margin-bottom: 10px;
+    }
+
+
+    .box p {
+
+        font-size: 13px;
+        text-align: left;
+    }
+
+
+    button {
+
+        max-width: 100px;
+        height: 40px;
+        font-size: 11.5px;
+
+    }
+
+    button:active {
+
+        border: 1px solid white;
+    }
+
+
+
+}
