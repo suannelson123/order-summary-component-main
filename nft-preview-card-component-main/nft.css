@@ -39,24 +39,81 @@ body {
     color: white;
     border-radius: 20px;
     box-shadow:2px 31px 0px 10px rgb(12 23 41), 0px 20px 0px 50px hsl(215deg 32% 27% / 1%);
-
+    position: relative;    
 }
 
 
 
-.container > img {
-
+.overlay > img{
     max-width: 100%;
-    border-radius: 12px;        
+    border-radius: 12px;
 }
 
-.container h1 {
+
+
+
+
+
+
+.overlay {
+    width: 340px;
+    height: 340px;
+    position: relative;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+
+.background-overlay {
+    background: rgba(57, 255, 255, 0.98);
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+
+
+
+
+.image-view {
+    position: absolute;
+    z-index: 1;
+    transform: translate(145px, 145px);
+    cursor: pointer; 
+}
+
+.overlay .background-overlay {
+    display: none;
+}
+
+.overlay .image-view {
+    display: none;
+}
+
+.overlay:hover .background-overlay {
+    opacity: 0.5;
+    display: block;
+    border-radius: 12px;
+}
+
+.overlay:hover .image-view {
+    display: block;
+
+}
+
+.text-container h1 {
     font-size: 25px;
     margin-bottom: 20px;
     font-weight: 600;
+    max-width: fit-content;
 }
 
-.container p {
+.text-container h1:hover {
+    color: rgba(57, 255, 255, 0.98);
+    cursor: pointer;
+}
+
+.text-container p {
 
     font-size: 20px;
     color: hsl(215, 51%, 70%);
@@ -73,7 +130,8 @@ body {
 }
 
 .span-container  {
-
+    width: 100%;
+    height: 100%;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -103,18 +161,18 @@ body {
 
 
 hr {
-
+    width: 100%;
     border-color: hsl(215, 51%, 70%);
     height: 0.0.5;
     margin-bottom: 20px;
-    opacity: 0.1;
+    opacity: 0.5;
 }
 
 .footer {
-
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
-    gap: 16px;
 }
 
 
@@ -128,11 +186,19 @@ hr {
 .footer  h2 {
     font-size: 18px;
     font-weight: 300;
+    display: inline-block;
+}
+
+.footer h2:hover {
+    color: rgba(57, 255, 255, 0.98);
+    cursor: pointer;
 }
 
 
-.footer h2 > span {
-    color: hsl(215, 51%, 70%);;
+.footer  span {
+    color: hsl(215, 51%, 70%);
+    margin-left: 16px;
+    margin-right: 5px;
 }
 
 
