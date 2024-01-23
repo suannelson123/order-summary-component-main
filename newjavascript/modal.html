@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModalElement</title>
+    <link rel="stylesheet" href="modal.css">
+    
+    
+    
+</head>
+
+
+<body>
+
+        <div class="open-button">Open</div>
+
+        <div class="warning-container">
+            <div class="warning-and-buttton">
+            <h1>WARNING</h1>
+            <div class="warning-close-button">X</div>
+        </div>
+            <div class="warning-wrapper">
+                <h1 class="warning-header1">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ad, inventore odit maiores, 
+                hic quaerat, possimus nemo tenetur laboriosam molestias recusandae nisi corrupti culpa dignissimos 
+                ullam! Praesentium alias commodi error.
+            </h1>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+
+<script>
+
+
+
+/*  const warningToggle = document.querySelector('.open-button');
+const warning = document.querySelector('.warning-container');
+const closeToggle = document.querySelector('.warning-close-button');         
+
+function openWarningMessage() {
+    console.log('naclick mo na');
+    warning.classList.add('active');
+    warningToggle.removeEventListener('click', openWarningMessage);
+    console.log('naremove na');
+}
+
+
+function closeWarningMessage() {
+
+    console.log('na close mo na');
+    warning.classList.remove('active');
+    warningToggle.addEventListener('click', openWarningMessage);
+    console.log('na add mo na');
+}
+
+
+
+warningToggle.addEventListener('click', openWarningMessage);
+closeToggle.addEventListener('click', closeWarningMessage); */
+
+
+
+
+const warning = document.querySelector('.warning-container');
+const closeToggle = document.querySelector('.warning-close-button');
+
+function toggle() {
+    console.log('open function called');
+    warning.classList.toggle('active');
+    console.log('na addd na');
+    
+    
+}
+
+
+function pressKey(event) {
+    if (event.key === 'Enter' && !warning.classList.contains('active')) {
+        toggle();
+        
+    }
+}
+
+document.addEventListener('keyup', pressKey);
+closeToggle.addEventListener('click', toggle)
+
+
+</script>
+</body>
+</html>

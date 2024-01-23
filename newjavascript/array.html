@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    
+<div>
+    <h1>List item:</h1>
+    <ul id="list">
+        
+    </ul>
+</div>
+
+    <script>
+
+
+const fruit = {
+  strawberry: 10,
+  apple: 20,
+  orange: 30,
+  mango: 40,
+};
+
+const products = ['strawberry', 'apple'];
+
+const totalSale = products.reduce((sum, product) => sum + fruit[product], 0);
+
+console.log('Fruits for sale and their quantities:');
+products.forEach(product => {
+  console.log(`${product}: ${fruit[product]}`);
+});
+
+console.log(`\nTotal of fruits for sale: ${totalSale}`);
+
+
+
+ const list = document.getElementById('list');
+
+for(let i = 0; i < 5; i++) {
+  let listItem = document.createElement('li');
+  list.appendChild(listItem).innerText = i+1;
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Follow Cursor Example</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #custom-cursor {
+      position: fixed;
+      width: 30px;
+      height: 30px;
+      background-color: #3498db;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transition: transform 0.1s ease;
+    }
+
+    /* Add additional styling for the rest of your page */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .custom-element {
+      width: 200px;
+      height: 100px;
+      background-color: #3498db;
+      color: #ffffff;
+      text-align: center;
+      line-height: 100px;
+      cursor: none; /* Hide the default cursor */
+      transition: background-color 0.3s ease;
+      position: relative;
+    }
+
+    .custom-element::before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100px;
+      background-color: red;
+    }
+
+    .custom-element:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-element">Hover me</div>
+
+  <div id="custom-cursor"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const cursor = document.getElementById('custom-cursor');
+
+      document.addEventListener('mousemove', function (e) {
+        const x = e.clientX - cursor.clientWidth / 2;
+        const y = e.clientY - cursor.clientHeight / 2;
+
+        cursor.style.transform = `translate(${x}px, ${y}px)`;
+      });
+    });
+  </script>
+</body>
+</html>

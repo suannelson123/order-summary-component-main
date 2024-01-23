@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="add">+</button>
+    <h1>Counter: <span id="counter">0</span></h1>
+    <button id="minus">-</button>
+
+    <script>
+        const addBtn = document.getElementById("add")
+        const minusBtn = document.getElementById("minus")
+        const counter = document.getElementById("counter")
+
+
+        
+        addBtn.addEventListener("click", function () {
+
+            counter.innerText = Number(counter.innerText) + 1;
+            
+        })
+
+        minusBtn.addEventListener("click", function () {
+
+            
+            
+            counter.innerText = Number(counter.innerText) -1
+ 
+                if (counter.innerText <= 0) {
+
+                    counter.innerText = 0;
+
+                }               
+
+        }
+        
+        
+        )
+        
+
+        
+
+    </script>
+</body>
+</html>

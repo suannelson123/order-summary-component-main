@@ -44,5 +44,6 @@ document.getElementById("submitButton").onclick = function(){
     c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
 
     document.getElementById("cLabel").innerHTML = "Side C" + c;
+    
 }
 
