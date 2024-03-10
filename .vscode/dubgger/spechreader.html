@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Speech Reader</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="speechReader-container">
+            <h1>Simple Speech Reader</h1>
+            <select name="voice" id="voices" style="width: 100%; height: 50px; font-size:20px;">
+                <option value="">Select A Voice</option>
+            </select>
+            <label for="rate">rate</label>
+            <input type="range" name="rate" min="0" max="3" value="1" step="0.1">
+            <label for="pitch">pitch</label>
+            <input type="range" name="pitch" min="0" max="2" step="0.1">
+            <textarea name="textarea" cols="30" rows="10"></textarea>  
+            
+            <div class="button-wrapper">
+                <button id="stop">Stop</button>
+                <button id="start">start</button>
+            </div>
+            
+        </div>
+    </main>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const message = new SpeechSynthesisUtterance();
+  let voices = [];
+  const selection = document.querySelector(`[name="voice"]`);
+  const options = document.querySelectorAll(
+    `[type="range"], [name="textarea"]`
+  );
+  const startBtn = document.getElementById("start");
+  const stopBtn = document.getElementById("stop");
+
+  message.text = document.querySelector('[name="textarea"]').value;
+
+  function speak() {
+    voices = speechSynthesis.getVoices();
+    console.log(voices);
+    selection.innerHTML=``;
+    voices.forEach((voice) => {
+      const option = document.createElement("option");
+      option.value = voice.name;
+      option.textContent = voice.name;
+      selection.appendChild(option);
+    });
+  }
+  message.volume = 100; 
+  startBtn.addEventListener("click", () => {
+    message.voice = voices[selection.selectedIndex];
+    speechSynthesis.speak(message);
+  });
+
+  speechSynthesis.addEventListener("voiceschanged", speak);
+
+  console.log(message);
+});
+
+    </script>
+
+</body>
+
+</html>
